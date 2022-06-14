@@ -1,0 +1,112 @@
+.app__filter_search {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 23px;
+}
+
+.app__search_box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    width: 450px;
+    box-shadow: 0 0 15px 0 rgba(53, 53, 53, 0.2);
+    background-color: var(--color-white);
+    border-radius: 5px;
+}
+
+.app__search_box input {
+    width: 85%;
+    color: var(--color-dark-gray);
+    border-radius: 5px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+    outline: none;
+    padding: 0 5px;
+    font-size: 16px;
+}
+
+.app__search_box .icon-search {
+    margin-left: 28px;
+    font-size: 25px;
+    color: var(--color-dark-gray);
+    background-color: var(--color-white);
+}
+
+.app__filter_box {
+    width: 200px;
+    box-shadow: 0 0 15px 0 rgba(53, 53, 53, 0.2);
+    border-radius: 5px;
+    position: relative;
+}
+
+.app__filter_box .form-select {
+    display: block;
+    width: 100%;
+    padding: 15px 15px;
+    font-size: 15px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 600;
+    color: var(--color-very-dark-blue-text);
+    background-color: var(--color-white);
+    background: url(../../assets/images/dark-arrow.svg) no-repeat right 10px center;
+    background-size: 16px 12px;
+    
+    height: 50px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.app__filter_box .form-select .option_list {
+    position: absolute;
+    width: 100%;
+    top: 57px;
+    left: 0;
+    border-radius: 5px;
+    background-color: var(--color-white);
+    display: none;
+    opacity: 0;
+    z-index: 11;
+}
+
+.app__filter_box .form-select.open .option_list {
+    opacity: 1;
+    display: block;
+}
+
+.app__filter_box .form-select option {
+    margin: 15px;
+    font-size: 15px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 600;
+}
+
+.app__filter_box .form-select option:hover {
+    color: #61dafb;
+}
+
+.app_items_container {
+    padding-top: 35px;
+}
+
+.app__spinner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cover-bg.dark .app__search_box, .cover-bg.dark .app__search_box input,.cover-bg.dark .app__search_box .icon-search, .cover-bg.dark .app__filter_box .form-select ,.cover-bg.dark .form-select .option_list{
+    background-color: var(--color-dark-blue) !important;
+    color: var(--color-white) !important;
+    
+}
+
+.cover-bg.dark .app__filter_box .form-select {
+    background: url(../../assets/images/white-arrow.svg) no-repeat right 10px center;
+    background-size: 16px 12px;
+}
+

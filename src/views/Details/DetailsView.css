@@ -1,0 +1,115 @@
+ 
+.details_row {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.link_back {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.link_back .link_back_to{
+  font-size: 18px;
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 600;
+  color: var(--color-very-dark-blue-text);
+  background-color: var(--color-white);
+  border-radius: 5px;
+  padding: 6px 30px 6px 18px;
+  box-shadow: 0 0 5px 0 rgba(53, 53, 53, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 130px;
+}
+
+.link_back .link_back_to .arrow_back{
+  font-size: 25px;
+  margin: 0 6px;
+  transition: all 0.5s;
+}
+
+.link_back .link_back_to:hover .arrow_back{
+   transform: scale(1.5);
+   transition: all 0.5s;
+}
+
+.app__card__detials {
+  display: grid;
+  grid-template-columns: repeat(2 , 1fr);
+  width: 100%;
+  margin-top: 70px;
+  gap: 70px;
+}
+
+.app__card__detials li{
+  list-style: none;
+  padding-top: 10px;
+  font-weight: 700;
+}
+
+.app__card__detials li span{
+  font-weight: 300;
+}
+
+.app__card__detials .col_info {
+  padding-top: 15px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.app__card__detials .col_info h2{
+  font-size: 28px;
+  font-weight: 800;
+  font-family: 'Nunito Sans', sans-serif; 
+}
+
+.app__card__detials .body_info {
+  display: flex;
+  flex-direction: row;
+}
+
+.app__card__detials .body_info ul{
+  padding-top: 30px;
+}
+
+.app__card__detials .body_info ul:last-child{
+  padding-left: 70px;
+}
+
+.footer_info {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.footer_info li{
+  min-width: 140px;
+}
+
+.footer_info .list_btn{
+  margin-top: 10px;
+  display: flex;
+}
+
+.footer_info .link-detail {
+  text-align: center;
+  padding: 4px 10px;
+  min-width: 100px;
+  margin: 6px;
+  background-color: var(--color-white);
+  color: var(--color-very-dark-blue-text);
+  box-shadow: 0 0 15px 0 rgba(53, 53, 53, 0.2);
+  border-radius: 5px;
+}
+.footer_info .link-detail span{
+  font-family: 'Nunito Sans', sans-serif; 
+  font-weight: 300;
+}
+
+.cover-bg.dark .link_back_to, .cover-bg.dark .link-detail {
+  background-color: var(--color-dark-blue) !important;
+  color: var(--color-white) !important;
+}
+
